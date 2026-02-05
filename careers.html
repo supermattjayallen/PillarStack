@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Careers | PillarStack</title>
+  <meta name="description" content="Join PillarStack. We’re hiring a Senior Software Engineer (Remote, U.S.)." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="careers">
+  <header>
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="index.html" aria-label="PillarStack Home">
+          <img src="logo.png" width="48" height="48" />
+          <div>
+            <div style="font-size:14px; opacity:0.92;">PillarStack</div>
+            <div style="font-size:12px; opacity:0.65; font-weight:600;">IT Consulting</div>
+          </div>
+        </a>
+
+        <nav class="navlinks" aria-label="Primary navigation">
+          <a data-nav="home" href="index.html">Home</a>
+          <a data-nav="services" href="services.html">Services</a>
+          <a data-nav="about" href="about.html">Why Us</a>
+          <a data-nav="careers" href="careers.html">Careers</a>
+          <a data-nav="contact" href="contact.html">Contact</a>
+        </nav>
+
+        <div class="navcta">
+          <a class="btn" href="careers.html">View Open Roles</a>
+          <button class="btn primary hamburger" id="menuBtn" aria-expanded="false" aria-controls="mobilePanel">☰ Menu</button>
+        </div>
+      </div>
+
+      <div class="mobilePanel" id="mobilePanel" aria-label="Mobile navigation">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">Why Us</a>
+        <a href="careers.html">Careers</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="pageHero">
+      <div class="container">
+        <span class="pill"><span class="dot"></span> Remote-friendly • Senior team • High standards</span>
+        <h1 class="h1">Careers</h1>
+        <p class="sub">Join a team that values craft, clarity, and calm execution. We’re currently hiring for one role.</p>
+        <div class="heroActions">
+          <a class="btn primary" href="contact.html">Apply now →</a>
+          <a class="btn" href="about.html">How we work</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="job" aria-label="Senior Software Engineer job posting">
+          <div class="jobTop">
+            <div>
+              <h3>Senior Software Engineer</h3>
+              <div class="jobMeta">
+                <span class="chip">Remote (U.S.)</span>
+                <span class="chip">Full-time</span>
+                <span class="chip">Senior IC / Lead track</span>
+                <span class="chip">Engineering</span>
+              </div>
+            </div>
+            <span class="tag"><span class="pulse"></span> Open role</span>
+          </div>
+
+          <p style="margin:12px 0 0; color: var(--muted); font-size: 14px; max-width: 85ch;">
+            You’ll design and build production services and user-facing applications, partner with clients, and elevate engineering quality
+            through reviews, mentorship, and thoughtful architecture.
+          </p>
+
+          <div class="jobCols">
+            <div>
+              <h4>What you’ll do</h4>
+              <ul>
+                <li>Deliver APIs and distributed services with strong reliability and observability.</li>
+                <li>Collaborate across stakeholders to translate business goals into technical solutions.</li>
+                <li>Mentor engineers and raise the bar on coding standards, testing, and design.</li>
+                <li>Improve CI/CD, deployment safety, and runtime monitoring in cloud environments.</li>
+              </ul>
+            </div>
+            <div>
+              <h4>What we’re looking for</h4>
+              <ul>
+                <li>7+ years building production software (backend or full-stack).</li>
+                <li>Strong experience with one or more: .NET, Node.js, Java, Python.</li>
+                <li>Hands-on cloud experience (AWS/Azure/GCP) and modern CI/CD.</li>
+                <li>Comfortable designing APIs, data models, and integrations.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap; align-items:center;">
+            <a class="btn primary" href="contact.html">Apply / Refer →</a>
+            <a class="btn" href="services.html">What we build</a>
+            <span class="tag" title="Benefits"><span class="pulse" style="background:var(--brand2); box-shadow:0 0 0 5px rgba(6,182,212,0.12)"></span> Competitive pay + benefits</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footGrid">
+          <div style="display:flex; align-items:center; gap: 0px;">
+            <img src="logo.png" width="48" height="48" />
+            <div>
+              <div style="font-weight:700; color: rgba(255,255,255,0.84);">PillarStack</div>
+              <div style="font-size:12px; color: rgba(255,255,255,0.58);">Modern IT services • Cloud • Engineering • Security</div>
+            </div>
+          </div>
+
+          <div class="tinyLinks">
+            <a href="services.html">Services</a>
+            <a href="about.html">Why Us</a>
+            <a href="careers.html">Careers</a>
+            <a href="contact.html">Contact</a>
+          </div>
+
+          <div style="font-size:12px;">© <span id="year"></span> PillarStack. All rights reserved.</div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

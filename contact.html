@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | PillarStack</title>
+  <meta name="description" content="Contact PillarStack for IT consulting services or apply to our Senior Software Engineer role." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="contact">
+  <header>
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="index.html" aria-label="PillarStack Home">
+          <img src="logo.png" width="48" height="48" />
+          <div>
+            <div style="font-size:14px; opacity:0.92;">PillarStack</div>
+            <div style="font-size:12px; opacity:0.65; font-weight:600;">IT Consulting</div>
+          </div>
+        </a>
+
+        <nav class="navlinks" aria-label="Primary navigation">
+          <a data-nav="home" href="index.html">Home</a>
+          <a data-nav="services" href="services.html">Services</a>
+          <a data-nav="about" href="about.html">Why Us</a>
+          <a data-nav="careers" href="careers.html">Careers</a>
+          <a data-nav="contact" href="contact.html">Contact</a>
+        </nav>
+
+        <div class="navcta">
+          <a class="btn" href="careers.html">View Open Roles</a>
+          <button class="btn primary hamburger" id="menuBtn" aria-expanded="false" aria-controls="mobilePanel">☰ Menu</button>
+        </div>
+      </div>
+
+      <div class="mobilePanel" id="mobilePanel" aria-label="Mobile navigation">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">Why Us</a>
+        <a href="careers.html">Careers</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="pageHero">
+      <div class="container">
+        <span class="pill"><span class="dot"></span> We respond within 1–2 business days</span>
+        <h1 class="h1">Contact</h1>
+        <p class="sub">Tell us what you’re building (or share your resume). This demo form doesn’t actually send anywhere—hook it up to a backend or form provider.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="split">
+          <div class="card">
+            <h2 style="margin:0 0 8px; font-size:18px;">Let’s talk</h2>
+            <p style="margin:0; color:var(--muted);">
+              For consulting inquiries, include your goals, timeline, and current stack. For job applicants, share your background and links (LinkedIn/GitHub).
+            </p>
+
+            <div class="badges" style="margin-top:14px;">
+              <span class="badge">Email: hello@PillarStack.example</span>
+              <span class="badge">Phone: (555) 012-3456</span>
+              <span class="badge">HQ: Chicago, IL (Remote team)</span>
+            </div>
+
+            <div style="margin-top:14px; color: rgba(255,255,255,0.70); font-size: 13px;">
+              <b style="color: rgba(255,255,255,0.90)">Tip:</b> If you’re applying, mention “Senior Software Engineer” in the topic.
+            </div>
+          </div>
+
+          <div class="card">
+            <h2 style="margin:0 0 8px; font-size:18px;">Send a message</h2>
+            <form onsubmit="return fakeSubmit(event)">
+              <div class="field">
+                <label for="name">Full name</label>
+                <input id="name" name="name" placeholder="Jane Doe" required />
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="jane@company.com" required />
+              </div>
+              <div class="field">
+                <label for="email">Phone number</label>
+                <input id="phone" name="phone" placeholder="(555) 123-4567" required />
+              </div>
+              <div class="field">
+                <label for="budget">Estimated budget (optional)</label>
+                <input id="budget" name="budget" placeholder="$25k–$100k" />
+              </div>
+              <div class="field full">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Tell us a bit about your project or experience..." required></textarea>
+              </div>
+              <div class="field full" style="display:flex; gap: 10px; flex-wrap:wrap; align-items:center;">
+                <button class="btn primary" type="submit">Send Message</button>
+                <a class="btn" href="careers.html">View Job Posting</a>
+                <span id="formStatus" style="color: rgba(255,255,255,0.72); font-size: 13px;"></span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footGrid">
+          <div style="display:flex; align-items:center; gap: 0px;">
+            <img src="logo.png" width="48" height="48" />
+            <div>
+              <div style="font-weight:700; color: rgba(255,255,255,0.84);">PillarStack</div>
+              <div style="font-size:12px; color: rgba(255,255,255,0.58);">Modern IT services • Cloud • Engineering • Security</div>
+            </div>
+          </div>
+
+          <div class="tinyLinks">
+            <a href="services.html">Services</a>
+            <a href="about.html">Why Us</a>
+            <a href="careers.html">Careers</a>
+            <a href="contact.html">Contact</a>
+          </div>
+
+          <div style="font-size:12px;">© <span id="year"></span> PillarStack. All rights reserved.</div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

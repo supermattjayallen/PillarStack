@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Why PillarStack | About</title>
+  <meta name="description" content="PillarStack is a delivery-first IT consulting company specializing in modern cloud engineering, security, and scalable software systems." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="about">
+  <header>
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="index.html" aria-label="PillarStack Home">
+          <img src="logo.png" width="48" height="48" />
+          <div>
+            <div style="font-size:14px; opacity:0.92;">PillarStack</div>
+            <div style="font-size:12px; opacity:0.65; font-weight:600;">IT Consulting</div>
+          </div>
+        </a>
+
+        <nav class="navlinks" aria-label="Primary navigation">
+          <a data-nav="home" href="index.html">Home</a>
+          <a data-nav="services" href="services.html">Services</a>
+          <a data-nav="about" href="about.html">Why Us</a>
+          <a data-nav="careers" href="careers.html">Careers</a>
+          <a data-nav="contact" href="contact.html">Contact</a>
+        </nav>
+
+        <div class="navcta">
+          <a class="btn" href="careers.html">View Open Roles</a>
+          <button class="btn primary hamburger" id="menuBtn" aria-expanded="false" aria-controls="mobilePanel">☰ Menu</button>
+        </div>
+      </div>
+
+      <div class="mobilePanel" id="mobilePanel" aria-label="Mobile navigation">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">Why Us</a>
+        <a href="careers.html">Careers</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="pageHero">
+      <div class="container">
+        <span class="pill"><span class="dot"></span> Clarity • Craft • Calm execution</span>
+        <h1 class="h1">Why PillarStack</h1>
+        <p class="sub">
+          We blend consulting rigor with a product-engineering mindset: define the problem, build the right thing,
+          then keep it healthy in production.
+        </p>
+        <div class="heroActions">
+          <a class="btn primary" href="contact.html">Talk to us →</a>
+          <a class="btn" href="services.html">See services</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="split">
+          <div class="card">
+            <h2 style="margin:0 0 8px; font-size:18px;">How we work</h2>
+            <p style="margin:0; color:var(--muted);">
+              Short feedback loops, clear documentation, strong ownership. We collaborate with stakeholders, ship iteratively,
+              and measure results with concrete metrics (latency, uptime, conversion, cost).
+            </p>
+            <div class="badges">
+              <span class="badge">Architecture that scales</span>
+              <span class="badge">Reliable releases</span>
+              <span class="badge">Performance-first</span>
+              <span class="badge">Secure-by-default</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h2 style="margin:0 0 8px; font-size:18px;">What you can expect</h2>
+            <p style="margin:0; color:var(--muted);">
+              A senior, low-ego team that communicates clearly and does the hard work to make systems dependable.
+              We aim for long-term maintainability—not heroics.
+            </p>
+            <div class="badges">
+              <span class="badge">Modern cloud patterns</span>
+              <span class="badge">Observability & SLOs</span>
+              <span class="badge">Clean API contracts</span>
+              <span class="badge">Pragmatic security</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards" style="margin-top:14px;">
+          <div class="card">
+            <h2 style="margin:0 0 8px; font-size:18px;">Engagement models</h2>
+            <p style="margin:0; color:var(--muted);">Pick what works best—then we adapt with you as needs change.</p>
+            <ul style="margin:12px 0 0; padding-left:18px; color:rgba(255,255,255,0.74); font-size:13px;">
+              <li><b>Advisory Sprint:</b> 1–2 weeks to align architecture, scope, and plan.</li>
+              <li><b>Delivery Squad:</b> A senior pod delivering features end-to-end.</li>
+              <li><b>Platform Enablement:</b> DevOps, CI/CD, cloud foundations, and SRE.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h2 style="margin:0 0 8px; font-size:18px;">Industries</h2>
+            <p style="margin:0; color:var(--muted);">We often support regulated and reliability-critical environments.</p>
+            <div class="badges">
+              <span class="badge">Healthcare</span>
+              <span class="badge">FinTech</span>
+              <span class="badge">SaaS</span>
+              <span class="badge">Public sector</span>
+              <span class="badge">Logistics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footGrid">
+          <div style="display:flex; align-items:center; gap: 0px;">
+            <img src="logo.png" width="48" height="48" />
+            <div>
+              <div style="font-weight:700; color: rgba(255,255,255,0.84);">PillarStack</div>
+              <div style="font-size:12px; color: rgba(255,255,255,0.58);">Modern IT services • Cloud • Engineering • Security</div>
+            </div>
+          </div>
+
+          <div class="tinyLinks">
+            <a href="services.html">Services</a>
+            <a href="about.html">Why Us</a>
+            <a href="careers.html">Careers</a>
+            <a href="contact.html">Contact</a>
+          </div>
+
+          <div style="font-size:12px;">© <span id="year"></span> PillarStack. All rights reserved.</div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
